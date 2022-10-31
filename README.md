@@ -5,39 +5,7 @@
 
 -   Extend experience with IPv4 Routing
 
-### Storyline
-
-As part of a settlement for the corporate sabotage Head Wall Ram (HWR) has acquired the Chips n' Salsa Gaming (CnS). It turns out that CnS didn't have a very good IT team even though they were games developers. The primary IT team has been sent to help the CnS developers release the latest online games system, leaving the Iterns with the responsibility of connecting the two corporate networks together. Your manager, Mr. Dell, has asked you to develop a simulation of connecting the two
-networks together before proceeding with the actual work.
-
-### Task 1 - Document CnS' network
-
-1.  CnS's network manager destroyed the work documentation prior to the takeover. He has since been fired.
-
-2.  The Chief of Security at Chips N' Salsa, Frank Catton, is supporting the merger of the two organization's networks. He has create an account with the username hwr-intern with the password of whyareyouhere on their network equipment.
-
-3.  From a terminal on GNS3 Host VM run the following command Accept the security key and enter the account password.
-
-`ssh hwr-intern@132.235.160.234`
-
-4.  Inspect the configuration of the router and create an IP Grid and network diagram for the CnS network.
-
-### Task 2 - Document your network
-
-5.  Only two LANs HWR's LAN1 and CnS's LAN5 are needed in the GNS simulation
-
-6.  HWR uses the following policy to deploy its IP networks.
-
--   HWRs production network uses the 10.48.0.0/16 address space.
-
--   All HWR networks us the /24 netmask
-
--   The 3rd Octet of the IP address is the network number.
-
--   For example LAN105's IP network would be 10.48.105.0/24.
-
--   Mr. Dell has provisioned the 10.48.250.0/24 network for the Interconnect network between HWR's router and CnS's External router.
-
+### Task 1 - Network Design
 |                           |**WAN**            |**(HWR) LAN1**     |**Interconnect**     |             |(CnS) LAN5
 |--                         |--                 |--                 |--                   |--           |-- 
 |Description                |To Internet        |To PC1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;         |To VyOS-2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|To VyOS-1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|To PC2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
