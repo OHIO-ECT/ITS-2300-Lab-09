@@ -6,7 +6,7 @@
 -   Extend experience with IPv4 Routing
 
 ### Task 1 - Network Design
-|                           |**WAN**            |**(HWR) LAN1**     |**Interconnect**     |             |(CnS) LAN5
+|                           |**WAN**            |**(HWR) LAN1**     |**Interconnect**                  |(CnS) LAN5
 |--                         |--                 |--                 |--                   |--           |-- 
 |Description                |To Internet        |To PC1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;         |To VyOS-2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|To VyOS-1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|To PC2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
 |Router                     |                   |VyOS-1             |VyOS-1         |VyOS-2         |VyOS-2
