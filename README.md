@@ -53,12 +53,18 @@
 `set protocols static route 0.0.0.0/0 next-hop <GATEWAY>`
 
 12. VyOS-2 should be able to ping a reliable IP address.
+
+13. Start the Ubuntu-GUI and check that is retrieves an IP address via DHCP.  This machine should be able to ping its default gateway but nothing else.
  
-## Task 3 - Outbound Routing - The default route
+## Task 3 - Capturing Data
 
-13. 
+14. Capturing data on VyOS-1's connection to the WAN is difficult because that interfaces sees all of the broadcast traffic on that network.  Wireshark has the ability to filter on packets based on the Ethernet header's source MAC address.
 
-
+15. Retreive the VyOS-1's MAC address on the Ethernet eth0 with the following command.
+ 
+ ````
+ 
+ ````
 
 11. Start a packet capture on the link between VyOS-1 and the Internet. 
 
@@ -72,7 +78,7 @@
 
 25. [Data] Use the packet captures and route tables to identify where the packet is being lost.
 
-## Task 3 - Return routes
+## Task 4 - Return routes
 
 26. The 0.0.0.0/0 in the set protcols command at the beginning of Task 3 represents a destination of all IPv4 addresses. This can be replaced with any network address and subnet mask. The next-hop is the instruction for what next router the packet being processed should be forwarded to moving ot closer to the end of its journey. Replace these two elements to create a new command that will instruct VyOS-1 how to get to CnS LAN5. Present this command to the class instructor or grader before proceding.
 
