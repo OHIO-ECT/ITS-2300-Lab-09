@@ -1,11 +1,13 @@
-## ITS 2300 - Lab 9
-### Goals 
+# ITS 2300 - Lab 9
+## Goals 
 
 -   Exercise existing network build skills.
 
 -   Extend experience with IPv4 Routing
 
-### Task 1 - Network Design
+## Task 1 - Network Design
+1. Complete the following IP grid using the 192.168.0.0/16 network for the LAN connections.
+
 |                           |**WAN**            |**(HWR) LAN1**     |**Interconnect**     |             |**(CnS) LAN5**
 |--                         |--                 |--                 |--                   |--           |-- 
 |Description                |To Internet        |To PC1             |To VyOS-2            |To VyOS-1    |To PC2
@@ -17,6 +19,8 @@
 |DHCP Pool Start            |--Not Applicable-- |                   |--Not Applicable--
 |DHCP Pool Stop             |--Not Applicable-- |                   |--Not Applicable-- 
 |Gateway Address            |132.235.160.190    |                   |
+
+2. Complete a recipie that includes all of the critical services
 
 ### Task 3 - Boot Strap
 
