@@ -30,21 +30,25 @@
 
 5.  Start the VyOS routers and apply the respective configurations.
 
-15. Start the VPCS and Ubuntu GUI systems and ensure that they get IP addresses from the appropriate DHCP servers.
+6.  Start the VPCS and Ubuntu GUI systems and ensure that they get IP addresses from the appropriate DHCP servers.
 
-16. [Data] When completed, systems that share a LAN should be able to ping systems with addresses on the same LAN. Keep one set of pings that show each of the LANs is appropriately configured.
+7.  [Data] When completed, systems that share a LAN should be able to ping systems with addresses on the same LAN. Keep one set of pings that show each of the LANs is appropriately configured.
 
-##Thursday morning objective
+#Thursday morning objective
 
-### Task 4 - The default route
+## Task 2 - The default route
 
-17. Add the default route to VyOS-1.
+8. Add the default route to VyOS-1.
 
 `set protocols static route 0.0.0.0/0 next-hop 132.235.160.190`
 
-18. Start a packet capture on the link between VyOS-1 and the Internet. Using a ether.addr filter in Wireshark and the show interfaces output from VyOS-1 to get the interfaces hardware/MAC address to filter out traffic that is only related to VyOS-1 eth0.
+9. Start a packet capture on the link between VyOS-1 and the Internet. 
 
-19. [Data] Export one ping request and one ping response showing that VyOS-1 is able to ping a reliable IP address.
+10. Use the show interfaces output from VyOS-1 to get the interfaces hardware/MAC address to filter out traffic that is only related to VyOS-1 eth0.
+
+ ether.addr filter in Wireshark 
+
+10. Check connectvity by ping a reliable IP address from VyOS-1.
 
 20. [Data] Show the route table on VyOS-1 at a NON-config prompt with the command show `ip route`
 
@@ -58,7 +62,7 @@
 
 25. [Data] Use the packet captures and route tables to identify where the packet is being lost.
 
-### Task 5 - Return routes
+## Task 3 - Return routes
 
 26. The 0.0.0.0/0 in the set protcols command at the beginning of Task 3 represents a destination of all IPv4 addresses. This can be replaced with any network address and subnet mask. The next-hop is the instruction for what next router the packet being processed should be forwarded to moving ot closer to the end of its journey. Replace these two elements to create a new command that will instruct VyOS-1 how to get to CnS LAN5. Present this command to the class instructor or grader before proceding.
 
@@ -70,7 +74,7 @@
 
 30. [Data] Collect show ip route output from both VyOS-1 and VyOS-2
 
-### Questions
+## Questions
 
 1.  Explain why VyOS-1 didn't need the user to add a return route to get back to VyOS-2.
 
