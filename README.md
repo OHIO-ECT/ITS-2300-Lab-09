@@ -6,7 +6,9 @@
 -   Extend experience with IPv4 Routing
 
 ## Task 1 - Network Design
-1. Complete the following IP grid using the 192.168.0.0/16 network for the LAN connections.
+1.  To facilitate data collection the implementation of various networks are explicitly directed by this lab write up. CAREFULLY read the lab through before proceeding with any work (this always has been and always will be a good idea).
+
+2. Complete the following IP grid using the 192.168.0.0/16 network for the LAN connections.
 
 |                           |**WAN**            |**(HWR) LAN1**     |**Interconnect**     |             |**(CnS) LAN5**
 |--                         |--                 |--                 |--                   |--           |-- 
@@ -20,31 +22,15 @@
 |DHCP Pool Stop             |--Not Applicable-- |                   |--Not Applicable-- 
 |Gateway Address            |132.235.160.190    |                   |
 
-2. Complete a recipie that includes all of the critical services
+3.  Consult a lab notebook and previous lab(s) to draft the commands needed to deploy the four critical services for the network below.  This include DHCP for both LANs
 
-### Task 3 - Boot Strap
-
-7.  To facilitate data collection the implementation of various networks are explicitly directed by this lab write up. CAREFULLY read the lab through before proceeding with any work (this always has been and always will be a good idea).
-
-8.  Consult a lab notebook and previous lab(s) to draft the commands needed to deploy the network below.
-
-9.  Create the following GNS3 project, do **not** start any objects... yet.
+4.  Create the following GNS3 project, do **not** start any objects... yet.
 
 ![](lab9-1.png)
 
-10. Start VyOS-1 and use the following command to set a hostname that will help identify the routers command interface from VyOS-2.
+5.  Start the VyOS routers and apply the respective configurations.
 
-`set system host-name <Name String>`
-
-11. Repeat the previous step for VyOS-2.
-
-12. Configure IP addresses on the used interfaces on VyOS-1 and VyOS-2.
-
-13. Configure NAT at VyOS-1 eth0. An additional source address line will need to be added for the CnS IP network. DO NOT configure NAT on VyOS-2.
-
-14. Configure DHCP pools for HWR LAN1 and CnS LAN5.
-
-15. [Data] Start the VPCS and Windows 10 systems and ensure that they get IP addresses from the appropriate DHCP servers.
+15. Start the VPCS and Ubuntu GUI systems and ensure that they get IP addresses from the appropriate DHCP servers.
 
 16. [Data] When completed, systems that share a LAN should be able to ping systems with addresses on the same LAN. Keep one set of pings that show each of the LANs is appropriately configured.
 
