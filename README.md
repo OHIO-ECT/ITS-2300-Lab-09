@@ -34,7 +34,9 @@
 
 7.  [Data] When completed, systems that share a LAN should be able to ping systems with addresses on the same LAN. Keep one set of pings that show each of the LANs is appropriately configured.
 
+```diff
 -! Thursday morning objective -!
+```
 
 ## Task 2 - The default route
 
