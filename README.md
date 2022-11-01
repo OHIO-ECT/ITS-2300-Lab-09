@@ -26,7 +26,7 @@
 
 4.  Create the following GNS3 project, do **not** start any objects... yet.
 
-![](lab9-1.png)
+![](Network Diagram - Routing.png)
 
 5.  Start the VyOS routers and apply the respective configurations.
 
