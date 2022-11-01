@@ -38,28 +38,36 @@
 -! Thursday morning objective -!
 ```
 
-## Task 2 - The default route
+## Task 2 - Outbound Routing - The default route
 
 8. Add the default route to VyOS-1.
 
 `set protocols static route 0.0.0.0/0 next-hop 132.235.160.190`
 
-9. Start a packet capture on the link between VyOS-1 and the Internet. 
+9.  Check connectvity by pinging a reliable IP address from VyOS-1.
+
+10. Show the route table on VyOS-1 at a operations prompt (not config) with the command `show ip route`
+
+11. Use the following template to develope a default route to be applied to VyOS-2, where <GATEWAY> is the IP address of the router interface on VyOS-1 in the Interconnect LAN.
+
+`set protocols static route 0.0.0.0/0 next-hop <GATEWAY>`
+
+12. VyOS-2 should be able to ping a reliable IP address.
+ 
+## Task 3 - Outbound Routing - The default route
+
+13. 
+
+
+
+11. Start a packet capture on the link between VyOS-1 and the Internet. 
 
 10. Use the show interfaces output from VyOS-1 to get the interfaces hardware/MAC address to filter out traffic that is only related to VyOS-1 eth0.
 
  ether.addr filter in Wireshark 
 
-10. Check connectvity by ping a reliable IP address from VyOS-1.
-
-20. [Data] Show the route table on VyOS-1 at a NON-config prompt with the command show `ip route`
-
-21. Start a packet capture on the link between VyOS-1 and VyOS-2.
-
-22. On VyOS-2 ping a reliable IP address (like 8.8.8.8).
-
-23. [Data] Export one ping request and one ping response from each packet capture showing that VyOS-2 is able to ping a reliable IP address.
-
+ 1. Start a packet capture on the link between VyOS-1 and VyOS-2.
+ 
 24. On the Windows Desktop system ping a reliable IP address. (This should fail)
 
 25. [Data] Use the packet captures and route tables to identify where the packet is being lost.
@@ -83,3 +91,5 @@
 2.  Explain why VyOS-2 does not need a route to get to HWR LAN5
 
 3.  Show configurations from VyOS1 and VyOS2 and data collected during the lab.
+
+4.  Develop a network diagram.
