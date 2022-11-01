@@ -63,19 +63,21 @@
 15. Retreive the VyOS-1's MAC address on the Ethernet eth0 with the following command.
  
  ````
- 
+ run show interfaces ethernet eth0
  ````
 
-11. Start a packet capture on the link between VyOS-1 and the Internet. 
+16. Start a packet capture on the link between VyOS-1 and the Internet. 
 
-10. Use the show interfaces output from VyOS-1 to get the interfaces hardware/MAC address to filter out traffic that is only related to VyOS-1 eth0.
+17. Use the show interfaces output from VyOS-1 to get the interfaces hardware/MAC address to filter out traffic that is only related to VyOS-1 eth0.
 
- ether.addr filter in Wireshark 
-
- 1. Start a packet capture on the link between VyOS-1 and VyOS-2.
+````
+eth.addr == <VYOS-1 eth0 MAC>
+````
  
-24. On the Windows Desktop system ping a reliable IP address. (This should fail)
+18. On the Ubuntu GUI system, ping a reliable IP address. (This should fail)
 
+
+ 
 25. [Data] Use the packet captures and route tables to identify where the packet is being lost.
 
 ## Task 4 - Return routes
