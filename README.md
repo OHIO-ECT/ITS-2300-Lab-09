@@ -10,21 +10,18 @@
 
 2.  Complete the following IP grid using the 192.168.0.0/16 network for the LAN connections.
 
-|                           |**WAN**            |**(HWR) LAN1**     |**Interconnect**     |**(CnS) LAN5**
+|                           |**WAN**            |**LAN1**     |**Interconnect**     |**LAN5**
+|Color                      |Green              |Blue               |Purple               |Orange
 |--                         |--                 |--                 |--                   |-- 
-|Description                |To Internet        |To PC1             | Interconnect        |To PC2
-|Router                     |                   |VyOS-1             | VyOS-1         |VyOS-2
-|Router Interface           |eth0               |eth6               | eth1                |eth7
+|Description                |To Internet        |To PC1             |Interconnect        |To PC2
+|Router                     |                   |VyOS-1             |VyOS-1         |VyOS-2
+|Router Interface           |eth0               |eth6               |eth1                |eth7
 |Network Address            |132.235.160.128    |                   |                     |
 |CIDR Netmask               |/26                |/24                |/24                  |/24
-|Static client address      |From Blackboard IP Grid |--Not Applicable--| {for VyOS-2-eth0} |--Not Applicable--
+|Static client address      |From Blackboard IP Grid |--Not Applicable-- |{for VyOS-2-eth0} |--Not Applicable--
 |DHCP Pool Start            |--Not Applicable-- |                   |--Not Applicable--   |
 |DHCP Pool Stop             |--Not Applicable-- |                   |--Not Applicable--   |
 |Gateway Address            |132.235.160.190    |                   |   |
-
-Provided for reference
-
-![](Routing-LAB-Color-IPGrid.png)
 
 3.  Consult a lab notebook and previous lab(s) to draft the commands needed to deploy Interfaces, NAT, Caching DNS and DHCP for both LANs.  Do **not** plan the set protocols static yet.
 
