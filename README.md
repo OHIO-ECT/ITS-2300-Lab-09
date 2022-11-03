@@ -10,8 +10,7 @@
 
 2.  Complete the following IP grid using the 192.168.0.0/16 network for the LAN connections.
 
-|                           |**WAN**            |**LAN1**     |**Interconnect**     |**LAN5**
-|Color                      |Green              |Blue               |Purple               |Orange
+|                           |**WAN**            |**LAN1**           |**Interconnect**     |**LAN5**
 |--                         |--                 |--                 |--                   |-- 
 |Description                |To Internet        |To PC1             |Interconnect        |To PC2
 |Router                     |                   |VyOS-1             |VyOS-1         |VyOS-2
@@ -22,6 +21,7 @@
 |DHCP Pool Start            |--Not Applicable-- |                   |--Not Applicable--   |
 |DHCP Pool Stop             |--Not Applicable-- |                   |--Not Applicable--   |
 |Gateway Address            |132.235.160.190    |                   |   |
+|Color                      |Green              |Blue               |Purple               |Orange
 
 3.  Consult a lab notebook and previous lab(s) to draft the commands needed to deploy Interfaces, NAT, Caching DNS and DHCP for both LANs.  Do **not** plan the set protocols static yet.
 
