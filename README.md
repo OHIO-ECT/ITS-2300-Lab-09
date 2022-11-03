@@ -22,6 +22,10 @@
 |DHCP Pool Stop             |--Not Applicable-- |                   |--Not Applicable-- 
 |Gateway Address            |132.235.160.190    |                   |
 
+Provided for reference
+
+![](Routing-LAB-Color-IPGrid.png)
+
 3.  Consult a lab notebook and previous lab(s) to draft the commands needed to deploy Interfaces, NAT, Caching DNS and DHCP for both LANs.  Do **not** plan the set protocols static yet.
 
 4.  Create the following GNS3 project, do **not** start any objects... yet.
