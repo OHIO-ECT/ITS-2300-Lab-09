@@ -10,17 +10,17 @@
 
 2.  Complete the following IP grid using the 192.168.0.0/16 network for the LAN connections.
 
-|                           |**WAN**            |**(HWR) LAN1**     |**Interconnect**     |             |**(CnS) LAN5**
-|--                         |--                 |--                 |--                   |--           |-- 
-|Description                |To Internet        |To PC1             |To VyOS-2            |To VyOS-1    |To PC2
-|Router                     |                   |VyOS-1             |VyOS-1               |VyOS-2       |VyOS-2
-|Router Interface           |eth0               |eth6               |eth1                 |eth0         |eth5
-|Network Address            |132.235.160.128    
-|CIDR Netmask               |/26                |/24                |/24                  |/24          |/24
-|Static client address      |From Blackboard IP Grid |--Not Applicable--|                 |             |--Not Applicable--
-|DHCP Pool Start            |--Not Applicable-- |                   |--Not Applicable--
-|DHCP Pool Stop             |--Not Applicable-- |                   |--Not Applicable-- 
-|Gateway Address            |132.235.160.190    |                   |
+|                           |**WAN**            |**(HWR) LAN1**     |**Interconnect**     |**(CnS) LAN5**
+|--                         |--                 |--                 |--                   |-- 
+|Description                |To Internet        |To PC1             | Interconnect        |To PC2
+|Router                     |                   |VyOS-1             | VyOS-1         |VyOS-2
+|Router Interface           |eth0               |eth6               | eth1                |eth7
+|Network Address            |132.235.160.128    |                   |                     |
+|CIDR Netmask               |/26                |/24                |/24                  |/24
+|Static client address      |From Blackboard IP Grid |--Not Applicable--| {for VyOS-2-eth0} |--Not Applicable--
+|DHCP Pool Start            |--Not Applicable-- |                   |--Not Applicable--   |
+|DHCP Pool Stop             |--Not Applicable-- |                   |--Not Applicable--   |
+|Gateway Address            |132.235.160.190    |                   |   |
 
 Provided for reference
 
