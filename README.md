@@ -95,7 +95,7 @@ ip.addr == 8.8.8.8 && eth.addr == <VYOS-1 eth0 MAC>
  
 ## Task 4 - Return route
 
-23. The 0.0.0.0/0 in the set protocols command at the beginning of Task 3 represents a destination of all IPv4 addresses. This can be replaced with any network address and subnet mask. The next-hop is the instruction for what next router the packet being processed should be forwarded to moving ot closer to the end of its journey. Replace these two elements to create a new command that will instruct VyOS-1 how to get to LAN5. Present this command to the class instructor or grader before proceding.
+23. The 0.0.0.0/0 in the set protocols command at the beginning of Task 2 represents a destination of all IPv4 addresses. This can be replaced with any network address and subnet mask. The next-hop is the instruction for what next router the packet being processed should be forwarded to moving ot closer to the end of its journey. Replace these two elements to create a new command that will instruct VyOS-1 how to get to LAN5. Present this command to the class instructor or grader before proceding.
 
 24. The Route table on each router can be viewed with the `show ip route` command.  This data might be helpful in answering questions.
  
